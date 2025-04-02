@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; transition: background 0.3s, color 0.3s; }
+        .dark-mode { background: #1a202c; color: #fff; }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <div class="container mx-auto px-4 py-8">
+        <button onclick="toggleDarkMode()" class="fixed top-4 right-4 p-2 bg-gray-800 text-white rounded">🌙</button>
+        <section class="text-center py-12">
+            <img src="Imagenes/Index/foto fake cv.jpg" alt="Foto de perfil" class="mx-auto w-40 h-40 rounded-full shadow-lg">
+            <h1 class="text-4xl font-bold mt-4">Miguel Suarez</h1>
+            <p class="text-lg text-gray-500">Warehouse Materials Coordinator</p>
+        </section>
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold">Sobre Mí</h2>
+            <p class="mt-2 text-gray-600">Aplico mis conocimientos y habilidades adquiridos en mis estudios y experiencia laboral para optimizar actividades y contribuir a la mejora continua en un entorno global.</p>
+        </section>
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold">Habilidades</h2>
+            <div class="grid grid-cols-3 gap-4 mt-4">
+                <span class="p-2 bg-gray-200 rounded">Gestión de Proyectos</span>
+                <span class="p-2 bg-gray-200 rounded">Negociación Efectiva</span>
+                <span class="p-2 bg-gray-200 rounded">Liderazgo</span>
+                <span class="p-2 bg-gray-200 rounded">Resolución de Problemas</span>
+                <span class="p-2 bg-gray-200 rounded">Six Sigma Green Belt</span>
+                <span class="p-2 bg-gray-200 rounded">Microsoft Office</span>
+                <span class="p-2 bg-gray-200 rounded">SAP NP1 & CSE</span>
+                <span class="p-2 bg-gray-200 rounded">Interpretación de Planos</span>
+                <span class="p-2 bg-gray-200 rounded">IATF Auditor Interno</span>
+            </div>
+        </section>
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold">Experiencia Profesional</h2>
+            <ul class="mt-4 space-y-2">
+                <li class="p-4 bg-gray-200 rounded">
+                    <strong>Continental Automotive Mexicana S.A. de C.V.</strong> - Warehouse Coordinator (2017 - Actualidad)<br>
+                    Administración de proyectos, procesos de recepción y envío, flujo de materiales en planta, atención al cliente y resolución de problemas.
+                </li>
+                <li class="p-4 bg-gray-200 rounded">
+                    <strong>Continental Automotive Mexicana S.A. de C.V.</strong> - Prototype Supervisor (2011 - 2017)<br>
+                    Responsable de la transferencia de prototipos, calidad y planificación de producción, negociación con clientes y proveedores.
+                </li>
+                <li class="p-4 bg-gray-200 rounded">
+                    <strong>Continental Automotive Mexicana S.A. de C.V.</strong> - Prototype Material Analyst (2009 - 2011)<br>
+                    Manejo de inventario, control de documentos y contacto con proveedores.
+                </li>
+                <li class="p-4 bg-gray-200 rounded">
+                    <strong>Continental Automotive Mexicana S.A. de C.V.</strong> - Inbound Logistics (2009)<br>
+                    Importación de bienes y maquinaria, contacto con aduanas.
+                </li>
+            </ul>
+        </section>
+        <section class="mt-8">
+            <h2 class="text-2xl font-semibold">Contacto</h2>
+            <p class="mt-2">📍 Cumbres Antillanas 44B, Col. Lomas de Comanjilla, CP 36277, Silao, Guanajuato</p>
+            <p>📞 4791172593</p>
+            <p>✉️ miguel_angelsv@outlook.com</p>
+        </section>
+    </div>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('dark-mode', document.body.classList.contains('dark-mode'));
+        }
+        if (localStorage.getItem('dark-mode') === 'true') {
+            document.body.classList.add('dark-mode');
+        }
+    </script>
+</body>
+</html>
